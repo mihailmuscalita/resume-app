@@ -1,0 +1,135 @@
+
+.nav__container{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #222;
+    padding: 5px 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.__logo a{
+    font-size: 20px;
+}
+
+.nav__bar li{
+    font-size: 16px;
+    padding: 15px 5px;
+}
+
+.nav__bar li a {
+    display: block;
+}
+
+.nav__bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.__list_container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.__list_container li {
+    margin-right: 15px;
+}
+
+.__toggle{
+    cursor: pointer;
+}
+
+.__item a{
+    padding: 7px 15px;
+    border: 1px solid #006d6d;
+    border-radius: 50em;
+}
+
+.__item a:hover{
+    transition: all .25s;
+    background: #006d6d;
+    border-color: #005959;
+}
+
+.__logoref{
+    text-decoration: underline;
+}
+
+.bars{
+    background: #999;
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 18px;
+}
+
+.bars::before, .bars::after{
+    background: #999;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    width: 18px;
+}
+
+.bars::before{
+    top: 6px;
+}
+
+.bars::after{
+    top: -6px;
+}
+
+@media all and (max-width: 624px) {
+
+    .nav__bar{
+        position: relative;
+    }
+
+    .nav__bar{
+        align-items: center;
+    }
+
+    .__toggle{
+        order: 1;
+        position: absolute;
+        top: 2px;
+        right: 1px;
+    }
+
+    .__logo{
+        flex: 1;
+    }
+    
+    .__item{
+        order: 2;
+        width: 100%;
+        text-align: center;
+        display: none;
+    }
+
+}
+
+@media all and (min-width: 624px) {
+
+    .nav__bar{
+        align-items: center;
+    }
+
+    .__toggle{
+        display: none;
+    }
+
+
+}
