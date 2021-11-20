@@ -56,14 +56,15 @@ a{
     border-radius: 50em;
 }
 
+.__logo a{
+    font-size: 25;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
 .__item a:hover{
     transition: all .25s;
     background: #006d6d;
     border-color: #005959;
-}
-
-.__logoref{
-    text-decoration: underline;
 }
 
 .bars{
@@ -95,13 +96,12 @@ a{
 
     .nav__container{
         position: relative;
-        justify-content: center;
-        align-items: center;
     }
 
     .nav__bar{
         flex-direction: column;
         height: auto;
+        align-items: flex-start;
     }
 
     .__logo{
@@ -112,6 +112,10 @@ a{
         width: 100%;
         text-align: center;
         margin-right: 0px;
+    }
+
+    .__list_container{
+        flex-direction: column;
     }
 
     .__toggle{
