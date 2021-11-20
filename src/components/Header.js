@@ -28,7 +28,7 @@ function Header(props) {
         <nav className="nav__container">
             <ul className="nav__bar">
                 <div className="__logo_container">
-                    <li className="__logo"><a className="__logoref" href="#">MihailMuscalita-Resume.com</a></li>
+                    <li className="__logo"><a className="__logoref" href="#">Muscalita Mihail</a></li>
                 </div>
                 <div className="__list_container">
                     {(toggleActive || innerScreenWidth>500) && 
