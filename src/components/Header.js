@@ -1,15 +1,28 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 import './Header.css'
 
 function Header(props) {
 
+    const [innerScreenWidth, setInnerScreenWidth] = useState(window.innerWidth);
     const [toggleActive, setToggleActive] = useState(false);
 
     const onToggleClick = () =>{
-        toggleActive == false ? setToggleActive(true) : setToggleActive(false);
-        console.log(toggleActive);
+        setToggleActive(!toggleActive);
     }
+
+    useEffect(() =>{
+        const onChangeWidth = () =>{
+            setInnerScreenWidth(window.innerWidth);
+        }
+
+        window.addEventListener("resize", onChangeWidth);
+
+        return () =>{
+            window.removeEventListener("resize",onChangeWidth);
+        }
+
+    }, []);
 
     return <>
         <nav className="nav__container">
@@ -18,11 +31,16 @@ function Header(props) {
                     <li className="__logo"><a className="__logoref" href="#">MihailMuscalita-Resume.com</a></li>
                 </div>
                 <div className="__list_container">
-                    <li className="__item"><a href="#">Home</a></li>
-                    <li className="__item"><a href="#">About me</a></li>
-                    <li className="__toggle" onClick={onToggleClick}>
-                        <span class="bars"></span>
-                    </li>
+                    {(toggleActive || innerScreenWidth>500) && 
+                    (<li className="__item"><a href="#">Experience</a></li>
+                     )}
+                    {(toggleActive || innerScreenWidth>500) && 
+                    (<li className="__item"><a href="#">About me</a></li>
+                     )}
+                    {innerScreenWidth < 500 &&
+                    (<li className="__toggle" onClick={onToggleClick}>
+                    <span class="bars"></span>
+                    </li>)}
                 </div>
             </ul>
         </nav>

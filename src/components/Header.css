@@ -91,6 +91,36 @@ a{
     top: -6px;
 }
 
+@media screen and (max-width:500px){
+
+    .nav__container{
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav__bar{
+        flex-direction: column;
+        height: auto;
+    }
+
+    .__logo{
+        padding: 15px;
+    }
+
+    .__items{
+        width: 100%;
+        text-align: center;
+        margin-right: 0px;
+    }
+
+    .__toggle{
+        position: absolute;
+        top: 20px;
+        right: 6px;
+    }
+}
+/* 
 @media all and (max-width: 624px) {
 
     .nav__bar{
@@ -132,4 +162,4 @@ a{
     }
 
 
-}
+} */
