@@ -23,7 +23,7 @@ function CardsList(props) {
                                person which really want to know for what I'm aiming for.
                                I do my best because I love what I do and I'm trying
                                to push myself to the next level every day. I think that 
-                               quality matters not quantity"/>                   
+                               quality matters not quantity."/>                   
         </div>
     );
 }
