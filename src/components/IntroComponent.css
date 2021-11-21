@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=EB+Garamond&family=M+PLUS+2:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=EB+Garamond&family=M+PLUS+2:wght@200&family=Playfair+Display&display=swap');
+
+.intro__container{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro__title{
+    padding: 15px;
+    width: 30%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 5px;
+}
+
+.intro__description{
+    padding: 15px;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin: 5px;
+}
+
+.__title{
+    font-size: 20px;
+    font-family: 'M PLUS 2', sans-serif;
+    padding: 10px;
+}
+
+.__title:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 0px;
+    border-radius: 10px;
+    background-color: rgb(255, 252, 209);
+}
+
+.__description{
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+}
