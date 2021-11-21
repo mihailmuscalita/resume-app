@@ -25,8 +25,8 @@ function IntroComponent(props) {
                 </div>
             </div>
             <div className="intro__description">
-                <span className="__description">I finished the Faculty of Computer Science in Cluj-Napoca at Babes Bolyiai faculty.
-                      In my second year of studyng I was hired after I was a part of an internship of 2 months.
+                <span className="__description">I finished the Faculty of Computer Science in Cluj-Napoca at Babes Bolyiai university.
+                      In my second year of studying I was hired after an internship of 2 months.
                       Since, that moment I started my career as a Software Engineer trying to propose best
                       solutions in every project that I was a part of.
                 </span>
