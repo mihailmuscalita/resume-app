@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=EB+Garamond&family=M+PLUS+2:wght@200&display=swap');
+
+.parrent__image__container{
+    position: relative;
+    max-width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    background-color: rgb(17, 16, 20);
+}
+
+.image__container{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 35px;
+    margin: auto;
+}
+
+.__profile__image{
+    align-self: center;
+    border-radius: 3px;
+    width: 20%;
+    height: 10%;
+    opacity: 0.6;
+    border-radius: 50%;
+}
+
+.__product__container{
+    position: absolute;
+    left: 200px;
+    top: 50px;
+}
+
+.__product{
+    color: whitesmoke;
+    font-family: 'M PLUS 2', sans-serif;
+}
+
+.__problem__solver{
+    position: absolute;
+    right: 233px;
+    top: 50px;
+}
+
+.__solver{
+    color: whitesmoke;
+    font-family: 'M PLUS 2', sans-serif;
+}
+
+.__motivation__container{
+    position: absolute;
+    right: 200px;
+    bottom: 50px;
+}
+
+.__motivation{
+    color: whitesmoke;
+    font-family: 'M PLUS 2', sans-serif;
+}
+
+.__code__container{
+    position: absolute;
+    left: 200px;
+    bottom: 50px;
+}
+
+.__code{
+    color: whitesmoke;
+    font-family: 'M PLUS 2', sans-serif;
+}
+
+.__attention__container{
+    position: absolute;
+    left: 200px;
+    top: 50%;
+}
+
+.__attention{
+    color: whitesmoke;
+    font-family: 'M PLUS 2', sans-serif;
+}
+
+.__selflearner__container{
+    position: absolute;
+    right: 200px;
+    top: 50%;
+}
+
+.__learner{
+    color: whitesmoke;
+    font-family: 'M PLUS 2', sans-serif;
+}
+
+@media screen and (max-width:1000px){
+    .parrent__image__container{
+        position: static;
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    .__product__container{
+        margin-left: 125px;
+        position: static;
+    }
+
+    .__problem__solver{
+        margin-left: 125px;
+        position: static;
+        text-align: left;
+    }
+
+    .__motivation__container{
+        margin-left: 125px;
+        position: static;
+        text-align: left;
+    }
+
+    .__code__container{
+        margin-left: 125px;
+        position: static;
+        text-align: left;
+    }
+
+    .__attention__container{
+        margin-left: 125px;
+        position: static;
+        text-align: left;
+    }
+
+    .__selflearner__container{
+        margin-left: 125px;
+        position: static;
+        text-align: left;
+    }
+
+    .__product,.__problem,.__motivation,.__code, .__attention,.__selflearner{
+        text-align: left;
+    }
+
+}
