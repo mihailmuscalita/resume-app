@@ -1,6 +1,7 @@
 import './App.css';
 
 import CardsList from './components/CardsList';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import ImageContainer from './components/ImageContainer';
 import IntroComponent from './components/IntroComponent';
@@ -16,6 +17,7 @@ function App() {
       <IntroComponent />
 
       <ImageContainer />
+      <Footer />
 
     </div>
   );

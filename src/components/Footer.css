@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=EB+Garamond&family=M+PLUS+2:wght@200&display=swap');
+
+.footer__container{
+    width: 100%;
+    height: 120px;
+    background-color: rgb(17, 16, 20);
+    padding: 0;
+    margin-top: 1px;
+}
+
+.social__container{
+    position: relative;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.item{
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.text{
+    font-family: 'M PLUS 2', sans-serif;
+    color: whitesmoke;
+}
+
+.item-text{
+    position: absolute;
+    bottom: 15px;
+}
